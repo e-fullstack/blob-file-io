@@ -2,7 +2,8 @@ spring:
   cloud:
     azure:
       storage:
-        container-name: blob-file-io
-        account-key: ${ACCOUNT_KEY:fake123==}
-        account-name: azwepersonal0001
-        endpoint: https://azwepersonal0001.blob.core.windows.net/blob-file-io
+        blob:
+          account-key: ${ACCOUNT_KEY:fake123==}
+          account-name: azwepersonal0001
+          container-name: blob-file-io
+          endpoint: https://azwepersonal0001.blob.core.windows.net/blob-file-io
